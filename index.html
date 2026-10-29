@@ -106,6 +106,7 @@ body{font-family:var(--serif);color:var(--paper);-webkit-font-smoothing:antialia
 .s-answer .band{position:absolute;left:0;right:0;bottom:0;height:170px;background:var(--ink);color:var(--paper);display:flex;align-items:center;padding:0 110px;gap:40px}
 .s-answer .band .h{font-size:64px;color:var(--paper);max-width:700px;line-height:1}
 .s-answer .band .b2{font-family:var(--serif);font-style:italic;font-size:48px;line-height:1.1;opacity:.95}
+.s-answer .band .b2.st{opacity:0}.s-answer .band .b2.st.on{opacity:.95}
 
 /* ---------- S4 wheel ---------- */
 .s-wheel .kicker{color:var(--yellow);margin-bottom:30px}
@@ -148,6 +149,7 @@ body{font-family:var(--serif);color:var(--paper);-webkit-font-smoothing:antialia
 .s-defs .card p{font-size:46px;line-height:1.2;font-style:italic}
 .s-defs .low{position:absolute;left:110px;right:110px;bottom:92px}
 .s-defs .low .l1{font-family:var(--mono);font-size:34px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px;opacity:.85}
+.s-defs .low .l1.st{opacity:0}.s-defs .low .l1.st.on{opacity:.85}
 .s-defs .low .l2{font-size:80px;line-height:1}
 
 /* ---------- S7 why now ---------- */
@@ -416,7 +418,6 @@ body{font-family:var(--serif);color:var(--paper);-webkit-font-smoothing:antialia
 .s-card .km{display:inline-block;width:.68em;height:.68em;border:2px solid var(--ink);vertical-align:-.02em;margin:0 .2em 0 .45em}
 .s-card .km:first-child{margin-left:0}
 /* S21 */
-.s-thx .home{position:absolute;right:140px;bottom:104px;font-size:42px;font-style:italic}
 .s-thx .who{text-transform:none;letter-spacing:.05em}
 .s-thx .who b{font-weight:400;text-transform:uppercase;letter-spacing:.14em}
 
@@ -534,7 +535,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
 </section>
 
 <!-- 03 HIS ANSWER -->
-<section class="slide light s-answer" data-sec="01 · A sentence" data-t="50">
+<section class="slide light s-answer" data-sec="01 · A sentence" data-t="50" data-clicks="2,3,5">
   <div class="kicker">He asks</div>
   <p class="big-q">“Then, how do we manage to cope with things we don’t understand?”</p>
   <div class="ans-wrap">
@@ -546,11 +547,11 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   </div>
   <div class="band st" data-s="4">
     <div class="h">And what is a chat window?</div>
-    <div class="b2 st" data-s="5">The strangest technology we’ve built, wearing the most familiar thing we have: a conversation.</div>
+    <div class="b2 st" data-s="5" data-delay="6">The strangest technology we’ve built, wearing the most familiar thing we have: a conversation.</div>
   </div>
   <aside class="notes" data-title="His answer">
-    <p>He asks the obvious next question: how do we cope? <span class="cue">[click]</span> His answer is lovely. When something is too strange or too complicated to deal with directly, we use a symbol — an icon, a name, a handle — so that it looks like something we already know. <span class="cue">[click, click]</span> “It is a great idea, that use of symbols. It lets our minds transform the strange into the commonplace.”</p>
-    <p><span class="cue">[click]</span> I think he’s right. That’s what a steering wheel is. That’s what a desktop icon is. <span class="cue">[click]</span> And I’d like you to notice: the strangest technology we’ve built is wearing the most familiar thing we have. A conversation. A chat window.</p>
+    <p>He asks the obvious next question: how do we cope? <span class="cue">[click]</span> His answer is lovely. When something is too strange or too complicated to deal with directly, we use a symbol — an icon, a name, a handle — so that it looks like something we already know. <span class="cue">[click]</span> “It is a great idea, that use of symbols. It lets our minds transform the strange into the commonplace.”</p>
+    <p><span class="cue">[click]</span> I think he’s right. That’s what a steering wheel is. That’s what a desktop icon is. <span class="cue">[the last line follows by itself]</span> And I’d like you to notice: the strangest technology we’ve built is wearing the most familiar thing we have. A conversation. A chat window.</p>
   </aside>
 </section>
 
@@ -572,7 +573,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
 </section>
 
 <!-- 06 DEFINITIONS -->
-<section class="slide dark s-defs" data-sec="03 · Literacy" data-t="70">
+<section class="slide dark s-defs" data-sec="03 · Literacy" data-t="70" data-clicks="2,3,5">
   <div class="kicker">What AI literacy is supposed to be</div>
   <div class="cards">
     <div class="card"><div class="src">EU AI Act · Art. 3(56)</div>
@@ -584,17 +585,17 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   <div class="low">
     <div class="l1 st" data-s="2">Read only the verbs: a skilled user. Minsky’s driver.</div>
     <div class="h l2 st" data-s="4" style="color:var(--pink)">Where do people practise it — deciding, refusing, changing?</div>
-    <div class="l3 st" data-s="5">That is the literacy my research is after.</div>
+    <div class="l3 st" data-s="5" data-delay="8">That is the literacy my research is after.</div>
   </div>
   <aside class="notes" data-title="Literacy">
     <p>So: AI literacy. It’s suddenly everywhere, so here are two definitions that run a lot of the world. The AI Act: skills, knowledge and understanding that let people make an “informed deployment” of AI and “gain awareness” of its risks. Long and Magerko, Georgia Tech, 2020 — the one everyone cites: “critically evaluate”, “communicate and collaborate”, “use”.</p>
     <p><span class="cue">[click]</span> Read only the verbs and you get a skilled user — Minsky’s driver. <span class="cue">[click]</span> But read on, and they ask for more. The Act speaks of affected persons and their rights. Long and Magerko recommend “embodied simulations of algorithms” and hands-on experiment — which is pretty much tonight.</p>
-    <p><span class="cue">[click]</span> So the ambition is there. What’s rare is the practice: where do people actually get to decide, to refuse, to change a decision — and see what happens? <span class="cue">[click]</span> That’s the literacy my research is after.</p>
+    <p><span class="cue">[click]</span> So the ambition is there. What’s rare is the practice: where do people actually get to decide, to refuse, to change a decision — and see what happens? <span class="cue">[the last line follows by itself]</span> That’s the literacy my research is after.</p>
   </aside>
 </section>
 
 <!-- 04 THE WHEEL -->
-<section class="slide dark s-wheel" data-sec="03 · Literacy" data-t="55">
+<section class="slide dark s-wheel" data-sec="03 · Literacy" data-t="55" data-clicks="5,6,7" data-stag="1.8">
   <div class="kicker">What Minsky’s driver still has</div>
   <ul>
     <li class="st" data-s="1"><b>01</b>A wheel.</li>
@@ -611,14 +612,14 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   </div>
   <div class="lower st" data-s="7"><div class="h">The engine can stay a mystery. <span class="mark pk">The road shouldn’t.</span></div></div>
   <aside class="notes" data-title="The wheel">
-    <p>And this is where Minsky’s metaphor earns its place — because look at what his driver still has. <span class="cue">[click ×5, slowly]</span> A wheel. A road somebody built, and you’re allowed to ask where it goes. Rules of the road. A plate on the back. Somewhere to complain. The driver doesn’t understand the engine and doesn’t need to, because everything around the engine is open to question.</p>
+    <p>And this is where Minsky’s metaphor earns its place — because look at what his driver still has. <span class="cue">[click]</span> <span class="cue">[the five lines come in one after another]</span> A wheel. A road somebody built, and you’re allowed to ask where it goes. Rules of the road. A plate on the back. Somewhere to complain. The driver doesn’t understand the engine and doesn’t need to, because everything around the engine is open to question.</p>
     <p><span class="cue">[click]</span> With AI, most of us get a text box. A very fluent one.</p>
     <p><span class="cue">[click]</span> So here’s my argument in one line: the engine can stay a mystery. The road shouldn’t. Literacy, for me, is knowing the road — who built it, what’s on the map, and what was left off.</p>
   </aside>
 </section>
 
 <!-- 04b WHERE THE DECISIONS ARE -->
-<section class="slide dark s-where" data-sec="03 · Literacy" data-t="55">
+<section class="slide dark s-where" data-sec="03 · Literacy" data-t="55" data-clicks="3,5,6" data-stag="3.8">
   <div class="h h-m" style="font-size:70px;white-space:nowrap">The decisions aren’t in the chat box.</div>
   <div class="brk"><div class="b1 st" data-s="3">All of this happens before you type</div><div class="b2 st" data-s="4">What you see</div></div>
   <div class="flow">
@@ -630,8 +631,8 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   <div class="labels st" data-s="5">Labels <span>who sorted what, under whose categories</span></div>
   <div class="foot st" data-s="6">Each one is a human decision.<br>Each one can be <span class="mark">named</span>. Each one can be <span class="mark pk">different</span>.</div>
   <aside class="notes" data-title="Where the decisions are">
-    <p>So where are the decisions, if they aren’t in the chat box? Before you type anything. <span class="cue">[click]</span> What’s in the archive — and what somebody left out. <span class="cue">[click]</span> What counts as a unit: a word, a piece of a word. <span class="cue">[click]</span> What counts as a good next word: what the system is trained to want. All of this happens before you type.</p>
-    <p><span class="cue">[click]</span> And this is what you see: a box that says “Ask anything.” <span class="cue">[click]</span> Running underneath: who labelled what, under whose categories.</p>
+    <p>So where are the decisions, if they aren’t in the chat box? Before you type anything. <span class="cue">[click]</span> What’s in the archive — and what somebody left out. What counts as a unit: a word, a piece of a word. What counts as a good next word: what the system is trained to want. All of this happens before you type.</p>
+    <p><span class="cue">[click]</span> And this is what you see: a box that says “Ask anything.” Running underneath: who labelled what, under whose categories.</p>
     <p><span class="cue">[click]</span> Nobody sees these. That’s not a conspiracy; it’s an interface doing exactly what Minsky said interfaces do. But each of them is a human decision, made at a particular time by particular people. So each one can be named. And each one can be different.</p>
   </aside>
 </section>
@@ -654,7 +655,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
 </section>
 
 <!-- 07b WHY ART -->
-<section class="slide c-orange s-art" data-sec="04 · Why art" data-t="50">
+<section class="slide c-orange s-art" data-sec="04 · Why art" data-t="50" data-clicks="1,4" data-stag="7">
   <div class="kicker">I’m an artist-researcher. So:</div>
   <div class="h big">Why art?</div>
   <p class="lede st" data-s="1"><span class="mark">Because art can show.</span></p>
@@ -665,7 +666,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   </div>
   <aside class="notes" data-title="Why art">
 <p>I’m an artist-researcher, so you’re entitled to ask: why art? <span class="cue">[click]</span> Because art can show. Explaining matters — I’m doing it right now, with slides — but some of this only lands when you do it.</p>
-    <p><span class="cue">[click]</span> Through the body: tonight your hands do the training — you feel what “counting what follows what” means, card by card. <span class="cue">[click]</span> Through creativity: once a machine is made of paper, you can imagine it otherwise, and build that instead. <span class="cue">[click]</span> And through participation: the decisions get made together, in public, by people who can disagree.</p>
+    <p><span class="cue">[click]</span> <span class="cue">[the three lines come in one after another]</span> Through the body: tonight your hands do the training — you feel what “counting what follows what” means, card by card. Through creativity: once a machine is made of paper, you can imagine it otherwise, and build that instead. And through participation: the decisions get made together, in public, by people who can disagree.</p>
     <p>That’s the practice the definitions ask for — and can’t provide on their own.</p>
   </aside>
 </section>
@@ -711,25 +712,25 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
 </section>
 
 <!-- 09c SHANNON -->
-<section class="slide light s-shan" data-sec="06 · The workshop" data-t="85">
+<section class="slide light s-shan" data-sec="06 · The workshop" data-t="85" data-clicks="1,3,5">
   <div class="kicker">Where the workshop comes from</div>
   <div class="top"><div class="h nm">Claude</div><div class="who st" data-s="1">reportedly named after <b>Claude Shannon</b>, who founded information theory in 1948</div></div>
   <div class="paper st" data-s="2">
     <div class="ph">C. E. Shannon · A Mathematical Theory of Communication · 1948 · second-order word approximation</div>
     <p>THE HEAD AND IN FRONTAL ATTACK ON AN ENGLISH WRITER THAT THE CHARACTER OF THIS POINT IS THEREFORE ANOTHER METHOD FOR THE LETTERS THAT THE TIME OF WHO EVER TOLD THE PROBLEM FOR AN UNEXPECTED.</p>
   </div>
-  <div class="how st" data-s="3">Made by hand: open a book, find the word, write down the word after it. Another page. Again.</div>
+  <div class="how st" data-s="3" data-delay="9">Made by hand: open a book, find the word, write down the word after it. Another page. Again.</div>
   <div class="then st" data-s="4">
     <div class="r"><b>MFA</b><span>2017–19: neural networks trained on my institute’s theses</span></div>
     <div class="r"><b>Now</b><span>a bigram model, made of paper — after Shannon</span></div>
   </div>
-  <div class="tag st" data-s="5"><span class="mark">That is the workshop.</span></div>
+  <div class="tag st" data-s="5" data-delay="28"><span class="mark">That is the workshop.</span></div>
   <aside class="notes" data-title="Shannon">
 <p>Where does this workshop come from? Partly from a name. One of today’s big chatbots is called Claude. <span class="cue">[click]</span> It’s reportedly named after Claude Shannon — the engineer who, in 1948, wrote the paper that founded information theory. And in that paper, there’s this. <span class="cue">[click]</span></p>
     <p><span class="cue">[Read slowly, flat:]</span> “The head and in frontal attack on an English writer that the character of this point is therefore another method for the letters…” A sentence nobody wrote.</p>
-    <p><span class="cue">[click]</span> He made it by hand: open a book, find a word, write down the word that comes after it; another page, find that word, write down what follows. A language model with a book and a pencil — almost eighty years before the chatbot that carries his name.</p>
+    <p><span class="cue">[this line fades in by itself]</span> He made it by hand: open a book, find a word, write down the word that comes after it; another page, find that word, write down what follows. A language model with a book and a pencil — almost eighty years before the chatbot that carries his name.</p>
     <p><span class="cue">[click]</span> I come to this from another direction. During my master’s I did this with old neural networks — trained on the theses in my own institute’s archive, and I made a book of what they wrote. <span class="cue">[Optional: “Of Gostak and Doshes” — the title comes from “the gostak distims the doshes”.]</span> Now I’m doing it with a bigram model: the simplest one there is, made of paper, inspired by Shannon’s paper.</p>
-    <p><span class="cue">[click]</span> That’s the workshop. I added a library, a few dozen strangers, and coloured cards.</p>
+    <p><span class="cue">[the closing line fades in by itself]</span> That’s the workshop. I added a library, a few dozen strangers, and coloured cards.</p>
   </aside>
 </section>
 
@@ -748,7 +749,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
 </section>
 
 <!-- 12 STATIONS -->
-<section class="slide light s-st" data-sec="06 · The workshop" data-t="60">
+<section class="slide light s-st" data-sec="06 · The workshop" data-t="60" data-clicks="1,3,4">
   <div class="kicker">Groups of four <i>·</i> a clipboard each <i>·</i> your group is one version</div>
   <div class="h h-m" style="font-size:74px">Three stations. No screens.</div>
   <div class="sts">
@@ -759,7 +760,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
     <div class="sc st" data-s="2"><div class="hd k"><span class="n">2</span><span><b>De machine</b><small>Feed the machine</small></span></div>
       <div class="ill"><div class="trays"><span>.</span><span>,</span><span>de</span><span>van</span><span>het</span><span>en</span><span>in</span><span>een</span><span>te</span><span>den</span><span>der</span><span>op</span><span>met</span><span>voor</span><span>die</span><span>is</span><span>;</span><span>:</span><div class="cat"></div><div class="catl">Catalogus · catalogue A–Z</div></div></div>
       <p>File each card by its first word: 18 trays, and a catalogue for the rest.</p></div>
-    <div class="sc st" data-s="3"><div class="hd r"><span class="n">3</span><span><b>De machine spreekt</b><small>The machine speaks</small></span></div>
+    <div class="sc st" data-s="3" data-delay="5"><div class="hd r"><span class="n">3</span><span><b>De machine spreekt</b><small>The machine speaks</small></span></div>
       <div class="ill"><div class="strip3"><span>heden<i class="k1"></i></span><span>verkrijgbaar<i class="k2"></i></span><span>bij<i class="k2"></i></span><span>den<i class="k2"></i></span><span>boekhandel<i class="k2"></i></span></div></div>
       <p>Draw blind from the ‘.’ tray, word by word, until a full stop. Peg it on the line.</p></div>
   </div>
@@ -767,35 +768,35 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   <aside class="notes" data-title="Three stations">
 <p>You wait at the reading stand; I collect you in fours and give each of you a clipboard. Your group is one version of the machine.</p>
     <p><span class="cue">[click]</span> Station one, the source: whole newspaper pages from Delpher, printed before 1880. You pick a sentence — twelve words at most, no Dutch needed — and decide what kind of text it is: family notice, advert, shipping, markets and weather, or news. That’s your colour, and you copy it as word pairs.</p>
-    <p><span class="cue">[click]</span> Station two: you feed the machine — each card goes in by its first word. <span class="cue">[click]</span> Station three: the machine speaks. Eyes closed, draw a card, write the next word, look it up, draw again — until a full stop. Then you peg it on the line.</p>
+    <p><span class="cue">[click]</span> Station two: you feed the machine — each card goes in by its first word. Station three: the machine speaks. Eyes closed, draw a card, write the next word, look it up, draw again — until a full stop. Then you peg it on the line.</p>
     <p><span class="cue">[click]</span> No starter model: version one starts empty, and every group trains the next. So we find out together when it first says something nobody wrote.</p>
   </aside>
 </section>
 
 <!-- 13 NAMES -->
-<section class="slide dark s-names" data-sec="06 · The workshop" data-t="55">
+<section class="slide dark s-names" data-sec="06 · The workshop" data-t="55" data-clicks="1,2,4">
   <div class="h h-m" style="font-size:70px">Every move has a name in AI.</div>
   <div class="tbl">
     <div class="rw st" data-s="1"><i class="dot b"></i><span class="a">I chose the newspaper pages</span><span class="n">sourcing</span></div>
-    <div class="rw st" data-s="1"><i class="dot b"></i><span class="a">You highlight one sentence</span><span class="n">selection</span></div>
+    <div class="rw st" data-s="1" data-delay="2.5"><i class="dot b"></i><span class="a">You highlight one sentence</span><span class="n">selection</span></div>
     <div class="rw st" data-s="2"><i class="dot b"></i><span class="a">You choose its colour</span><span class="n">labelling</span></div>
-    <div class="rw st" data-s="2"><i class="dot b"></i><span class="a">You leave a sentence out</span><span class="n">filtering</span></div>
-    <div class="rw st" data-s="2"><i class="dot b"></i><span class="a">You follow the house rules</span><span class="n">tokenisation</span></div>
+    <div class="rw st" data-s="2" data-delay="14"><i class="dot b"></i><span class="a">You leave a sentence out</span><span class="n">filtering</span></div>
+    <div class="rw st" data-s="2" data-delay="19"><i class="dot b"></i><span class="a">You follow the house rules</span><span class="n">tokenisation</span></div>
     <div class="rw st" data-s="3"><i class="dot k"></i><span class="a">You file the card</span><span class="n">training</span></div>
-    <div class="rw st" data-s="3"><i class="dot r"></i><span class="a">You draw blind</span><span class="n">sampling</span></div>
-    <div class="rw st" data-s="4"><i class="dot b"></i><span class="a">You fill in the model card</span><span class="n">documentation</span></div>
-    <div class="rw st" data-s="4"><i class="dot k"></i><span class="a">The next group arrives</span><span class="n">a new version</span></div>
+    <div class="rw st" data-s="3" data-delay="2.5"><i class="dot r"></i><span class="a">You draw blind</span><span class="n">sampling</span></div>
+    <div class="rw st" data-s="4" data-delay="5.5"><i class="dot b"></i><span class="a">You fill in the model card</span><span class="n">documentation</span></div>
+    <div class="rw st" data-s="4" data-delay="8"><i class="dot k"></i><span class="a">The next group arrives</span><span class="n">a new version</span></div>
   </div>
-  <div class="rules st" data-s="2">House rules: lowercase · every punctuation mark is a word · numbers in letters · spelling as printed · don’t correct · every piece starts and ends with a full stop</div>
+  <div class="rules st" data-s="2" data-delay="19">House rules: lowercase · every punctuation mark is a word · numbers in letters · spelling as printed · don’t correct · every piece starts and ends with a full stop</div>
   <aside class="notes" data-title="Every move has a name">
 <p>Every one of those moves has a name in AI. <span class="cue">[click]</span> I chose the pages: sourcing. You pick one sentence: selection.</p>
     <p><span class="cue">[click]</span> You choose its colour: labelling — in the industry, people deciding piece by piece what a text is, often fast and paid per item. You may meet racist or colonial language; these papers are more than 140 years old. Leave it out, and that’s filtering. And the house rules — lowercase, every comma is a word, spelling as printed — that’s tokenisation. Someone always decides those. Here, it was me.</p>
-    <p><span class="cue">[click]</span> Filing the card is training. Drawing blind is sampling. <span class="cue">[click]</span> The model card is documentation; the next group is a new version. Every one of these is a human decision — and every one could be different.</p>
+    <p><span class="cue">[click]</span> Filing the card is training. Drawing blind is sampling. The model card is documentation; the next group is a new version. Every one of these is a human decision — and every one could be different.</p>
   </aside>
 </section>
 
 <!-- 13b MODEL CARD -->
-<section class="slide light s-card" data-sec="06 · The workshop" data-t="35">
+<section class="slide light s-card" data-sec="06 · The workshop" data-t="35" data-clicks="4,5" data-stag="4.5">
   <div class="left">
     <div class="kicker">On every clipboard</div>
     <div class="h h-m" style="font-size:100px;line-height:.95">The model card.</div>
@@ -816,7 +817,7 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   </div>
   <aside class="notes" data-title="The model card">
 <p>Every clipboard carries a model card — borrowed from real AI, where a model is supposed to ship with documentation.</p>
-    <p><span class="cue">[click ×2]</span> Training data, and what you left out on purpose. <span class="cue">[click]</span> The knowledge cutoff: the year of your newspaper — so every version of this machine thinks it’s eighteen-something. <span class="cue">[click]</span> And its known limitations.</p>
+    <p><span class="cue">[click]</span> Training data, and what you left out on purpose. The knowledge cutoff: the year of your newspaper — so every version of this machine thinks it’s eighteen-something. And its known limitations.</p>
     <p><span class="cue">[click]</span> The sheet stays with the machine: by the end of the night, around ten versions and a stack of documentation.</p>
     <p><span class="cue">[CUT IF SHORT ON TIME: skip this slide — about 35 seconds.]</span></p>
   </aside>
@@ -864,12 +865,12 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
 </section>
 
 <!-- 20 CLOSE -->
-<section class="slide dark s-close" data-sec="09 · Go" data-t="55">
+<section class="slide dark s-close" data-sec="09 · Go" data-t="55" data-clicks="2,5,7" data-stag="4.2">
   <div class="blob" style="left:1100px;top:380px;width:800px;height:700px;background:var(--pink);opacity:.22"></div>
   <div class="q">You drive a car, not knowing how its engine works.</div>
   <div class="lines">
     <div class="h st" data-s="1"><span class="mark">Fine. Drive.</span></div>
-    <div class="h st" data-s="2">But somebody built the road.</div>
+    <div class="h st" data-s="2" data-delay="2.5">But somebody built the road.</div>
   </div>
   <div class="paper3">
     <div class="p st" data-s="3"><b>1941</b><span>Borges</span><em>a library of every possible book</em></div>
@@ -879,9 +880,9 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   <div class="h fin st" data-s="6">On paper first. Tonight: build a very small one.</div>
   <div class="foot st" data-s="7">Workshop 19:45–21:45 · Erasmuszaal · wait at the reading stand<br><em>Broncode: source code. Station one is called De Bron — the source.</em></div>
   <aside class="notes" data-title="Close">
-<p>Minsky again. “You drive a car, not knowing how its engine works.” <span class="cue">[click]</span> Fine. Drive. <span class="cue">[click]</span> But somebody built the road — and look who drew it first.</p>
-    <p><span class="cue">[click]</span> Borges imagined a library of every possible text in 1941. <span class="cue">[click]</span> Shannon made sentences nobody wrote, with a book and a pencil, in 1948. <span class="cue">[click]</span> Minsky wrote about living with machines we don’t understand in 1984. None of them predicted today. They did something more useful: they worked it out on paper first.</p>
-    <p><span class="cue">[click]</span> So: on paper first. Tonight, build a very small one. <span class="cue">[click]</span> Quarter to eight, Erasmuszaal — wait at the reading stand and I’ll collect you in fours. The exhibition is called Broncode: source code. Station one is called De Bron — the source. Let’s go and look at the sources.</p>
+<p>Minsky again. “You drive a car, not knowing how its engine works.” <span class="cue">[click]</span> Fine. Drive. But somebody built the road — and look who drew it first.</p>
+    <p><span class="cue">[click]</span> Borges imagined a library of every possible text in 1941. Shannon made sentences nobody wrote, with a book and a pencil, in 1948. Minsky wrote about living with machines we don’t understand in 1984. None of them predicted today. They did something more useful: they worked it out on paper first.</p>
+    <p><span class="cue">[click]</span> So: on paper first. Tonight, build a very small one. Quarter to eight, Erasmuszaal — wait at the reading stand and I’ll collect you in fours. The exhibition is called Broncode: source code. Station one is called De Bron — the source. Let’s go and look at the sources.</p>
   </aside>
 </section>
 
@@ -893,7 +894,6 @@ html.print .s-card .f[data-s]{background:rgba(242,225,75,.65)}
   <span class="scrap two">papieren<i class="ar"></i>machine<span class="tab k2"></span></span>
   <span class="scrap three">machine<i class="ar"></i>.<span class="tab k5"></span></span>
   <div class="who"><b>Agustín Martínez Caram</b><br>martinezcaram.com · m.a.martinez.caram@pl.hanze.nl<br>Instagram @agus.ti_n</div>
-  <div class="home">Try it at home: a book and a pencil.</div>
   <aside class="notes" data-title="Thanks">
     <p>Thank you.</p>
   </aside>
@@ -1014,8 +1014,25 @@ const stage=document.getElementById('stage');
 const slides=[...document.querySelectorAll('.slide')];
 const main=slides.filter(s=>!s.hasAttribute('data-appendix'));
 const total=main.length;
-const stepsOf=el=>el.dataset.steps?+el.dataset.steps:Math.max(0,...[...el.querySelectorAll('[data-s]')].map(e=>+e.dataset.s));
-slides.forEach(sl=>sl._steps=stepsOf(sl));
+const FAST=/[?&]fast\b/.test(location.search);
+// data-s = fine-grained order of reveal. A slide may carry data-clicks="a,b,c": click k reveals every data-s up to its
+// threshold; the items inside one click come in one after another (data-stag seconds apart, or a per-item data-delay).
+const stepsOf=el=>el.dataset.clicks?el.dataset.clicks.split(',').length:(el.dataset.steps?+el.dataset.steps:Math.max(0,...[...el.querySelectorAll('[data-s]')].map(e=>+e.dataset.s)));
+slides.forEach(sl=>{
+  sl._steps=stepsOf(sl);
+  const els=[...sl.querySelectorAll('[data-s]')];
+  const cl=sl.dataset.clicks?sl.dataset.clicks.split(',').map(Number):null;
+  const stag=FAST?0:(sl.dataset.stag!=null?+sl.dataset.stag:.7);
+  els.forEach(e=>{e._base=parseFloat(e.style.transitionDelay)||0;});
+  els.forEach(e=>{
+    const f=+e.dataset.s;
+    if(!cl){e._click=f;e._delay=0;return;}
+    const k=cl.findIndex(h=>f<=h),lo=k?cl[k-1]:0;
+    const grp=[...new Set(els.map(x=>+x.dataset.s).filter(g=>g>lo&&g<=cl[k]))].sort((a,b)=>a-b);
+    e._click=k+1;
+    e._delay=FAST?0:(e.dataset.delay!=null?+e.dataset.delay:grp.indexOf(f)*stag);
+  });
+});
 // cumulative planned time
 let acc=0;slides.forEach(sl=>{sl._at=acc;acc+=(+sl.dataset.t||0);});
 const fmt=t=>Math.floor(t/60)+':'+String(Math.round(t%60)).padStart(2,'0');
@@ -1029,7 +1046,13 @@ function countUp(el){
 }
 function apply(){
   const sl=slides[i];
-  sl.querySelectorAll('[data-s]').forEach(e=>{const on=+e.dataset.s<=s;e.classList.toggle('on',on);if(on&&e.classList.contains('count'))countUp(e);});
+  sl.querySelectorAll('[data-s]').forEach(e=>{
+    const on=e._click<=s;
+    if(on!==e.classList.contains('on')){
+      if(on){const d=e._base+e._delay;e.style.transitionDelay=d>0?(e.classList.contains('hi')?d+'s,'+(d+.2)+'s':d+'s'):'';}
+      else e.style.transitionDelay='0s';
+    }
+    e.classList.toggle('on',on);if(on&&e.classList.contains('count'))countUp(e);});
   sl.classList.toggle('step1', sl.classList.contains('s-babel')&&s===1);
   sl.classList.toggle('step2', sl.classList.contains('s-babel')&&s>=2);
   hud();
@@ -1037,6 +1060,7 @@ function apply(){
 function hud(){
   const sl=slides[i],idx=main.indexOf(sl);
   numEl.textContent=idx>=0?String(idx+1).padStart(2,'0')+' / '+total:'Appendix';
+  numEl.style.visibility=(sl.classList.contains('s-answer')&&s>=3)?'hidden':'';
   secEl.textContent=sl.dataset.sec||'';
   barEl.style.width=(idx>=0?(idx/(total-1))*100:100)+'%';
   stage.dataset.th=(sl.classList.contains('dark'))?'dark':(sl.classList.contains('s-sil')||sl.classList.contains('s-own')?'light':'light');
